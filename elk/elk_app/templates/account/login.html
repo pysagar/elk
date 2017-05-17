@@ -1,0 +1,84 @@
+{% extends "_layout/base.html" %}
+{% load static %}
+{% block ngapp %}{#this page will not be a angular app page#}{% endblock ngapp %}
+
+{% block header %}
+{# there will be no header on login page #}
+{% endblock header %}
+{% block main-container %}
+<div id="content" class="text-center logo-padding">
+    <a id="logo-lg" href="{% url 'home' %}"><img src="{% static 'img/forgeahead_logo.png' %}" /> </a>
+
+    <div class="well well-transparent">
+        <div id="logo-text"></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-6 col-md-offset-3 ">
+            <div class="panel panel-nlms">
+                <div class="panel-body">
+                    <form method="post" action="{% url 'elk_login' %}?next={% url 'home' %}">
+                        <h1>Sign In</h1>
+                        {% csrf_token %}
+                        {% if form.non_field_errors %}
+                        <div class="text-left">
+                            {% for error in form.non_field_errors %}
+                            <p class="text-center text-danger small"> {{error}} </p>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="well well-transparent">
+                                    <div class="form-group">
+                                        <input type="email" name="username" maxlength="254"
+                                               placeholder="Email" class="form-control"
+                                               value="{{form.username.value|default:''}}">
+                                        {% for error in form.username.errors %}
+                                        <span class="text-danger small">{{error}}</span>
+                                        {% endfor %}
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="password"
+                                               placeholder="Password" class="form-control">
+                                        {% for error in form.password.errors %}
+                                        <span class="text-danger small">{{error}}</span>
+                                        {% endfor %}
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-org btn-lg">
+                                            Sign in
+                                        </button>
+                                    </div>
+                                    <label>
+                                    <input name="remember_me" type="checkbox">&nbsp;&nbsp;Keep me logged in
+                                    </label>
+                                    
+                                    <div class="form-group">
+                                    <a href="{% url 'password_reset' %}">Forgot Password?</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="well well-transparent well-lg ft-wt">
+                © 2017 Forgeahead.io All rights reserved
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock main-container %}
+
+{% block css %}
+<style>
+    body {
+        padding-top: 25px;
+        background: #ffffff;
+    }
+</style>
+{% endblock css %}
+

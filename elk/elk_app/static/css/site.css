@@ -1,0 +1,426 @@
+#usericon {
+    font-size: 30px;
+    line-height: inherit;
+    left: 10px;
+    margin-right: 17px;
+    top: 0px;
+    color: #333;
+}
+
+#companyicon {
+    width: 65%;
+    height: 250%;
+}
+
+#brand {
+    margin-top: -4%;
+}
+
+#nav1 {
+    margin-bottom: 0px;
+}
+
+#nav2 {
+    margin-bottom: 0px;
+}
+
+#main-content-controls {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.logo-padding {
+  padding-top: 10%;
+}
+
+.sort-keys {
+    font-size: 11px
+}
+
+.select2Ui {
+    width: 100%;
+}
+
+th.role, th.hr_rate, th.status {
+    width: 100px
+}
+
+#logo-text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.ft-wt {
+    color: #fff;
+}
+
+.table-data {
+    height: 38px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.progress {
+    margin-bottom: 0px;
+}
+
+.progress-bar {
+    background-color: firebrick;
+}
+
+.final-row {
+    background-color: #d8d8d8;
+    font-weight: bold;
+}
+
+.nav, .pagination, .carousel, .panel-title a {
+    cursor: pointer; }
+
+.clickable {
+    cursor: pointer;
+}
+
+/* css only for drills result page*/
+.level5 {
+    color: #CC0000;
+}
+
+.level4 {
+    color: #FF9900;
+}
+
+.level3 {
+    color: #FFFF00;
+}
+
+.level2 {
+    color: #6AA84F;
+}
+
+.level1 {
+    color: #3C78D8;
+}
+
+#learnerlist {
+    float: left;
+}
+
+#drillresults {
+    overflow-x: auto;
+    min-width: 90px;
+}
+
+.table-header-min-width{
+    min-width: 100px;
+    width:200px;
+    white-space: nowrap;
+}
+
+.term-report-header{
+    min-width: 150px !important;
+}
+
+.modal-body .panel-body input{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    height: 25px;
+}
+
+.modal-body .panel-body input[type="radio"]{
+    margin-top: -3px;
+    height: 25px;
+}
+
+.modal-body .panel-body .form-control[disabled = "disabled"]{
+    margin-top: 2px;
+    padding-top: 2px;
+    height: 25px;
+}
+
+.modal-body .panel-body .form-group{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.modal-body .panel-body textarea{
+    margin-bottom: 5px;
+    padding-top: 0px;
+
+}
+
+.modal-body .uncompress-input-height .panel-body input{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    height: 33px;
+}
+
+/* Hide spinner for input type number */
+input[type=number].no-spinners::-webkit-inner-spin-button,
+input[type=number].no-spinners::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number].no-spinners {
+    -moz-appearance: textfield;
+    padding-top: 2px;
+}
+
+.modal-header .close {
+    margin-top: 5px;
+}
+
+.modal-body {
+    padding: 10px;
+}
+
+.modal-body .form-group, .modal-body .input-group{
+    margin-bottom: 3px;
+}
+
+.timepicker-arrow .form-group,.timepicker-arrow .btn[type = "button"]{
+    display: inline-flex;
+    margin-top: -10px;
+    margin-bottom: -22px;
+}
+
+.timepicker-arrow .form-group a{
+    margin-left: -12px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.timepicker-arrow .form-group .btn .glyphicon-chevron-up{
+    top: 3px;
+    width:2px;
+    right: -10px;
+}
+
+.timepicker-arrow .form-group .btn .glyphicon-chevron-down{
+    top: 3px;
+    width:2px;
+    right: 10px;
+}
+
+.timepicker-arrow tr:first-child{
+    display: none;
+}
+
+.timepicker-arrow tr:last-child{
+    display: none;
+}
+
+.timepicker-error{
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
+
+.navbar-default .nav a{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navbar-default .navbar-collapse{
+    margin-left: -25px;
+}
+
+.navbar-default{
+    min-height: 0px;
+}
+
+.container h2{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 2px;
+}
+
+
+.table-top-scrollbar{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.table-bottom-scrollbar{
+  margin-bottom: 40px;
+}
+
+hr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* to reduce cell size of table*/
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.editable-bsdate{
+    width: 280px !important;
+}
+
+.editable{
+    font-style: normal !important;
+    color: #2a6496 !important;
+}
+
+.editable-empty:hover{
+    font-style: normal !important;
+}
+
+.set-default-fees-modal .editable-controls .editable-input{
+    width: 180px !important;
+}
+
+.edit-attendance-popover .ns-popover-width{
+    width: 350px;
+    margin-left: -368px;
+}
+
+.edit-attendance-popover h4{
+    margin: 0px;
+    font-size: 15px;
+}
+
+.mandatoryFields{
+    color: #cf0000;
+}
+
+/* added dropdown-submenu css as bootstrap 3 has removed sub-menu component.*/
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+table#coach-payment-table .glyphicon-padding{
+    padding-right: 0px !important;
+}
+
+.paragraph-nspopover-stuff{
+        white-space: pre-line; !important;
+}
+
+.pastel-red{
+    background: #FF7878 !important;
+}
+
+.pastel-blue{
+    background: #B4CFEC !important;
+}
+
+.mouseEnter{
+    background: #f5f5fc;
+}
+
+/*xeditable-textbox-width specific attributes*/
+.xeditable-textbox-width{
+    width: 70px;
+}
+
+/*xeditable-textbox-width shared attributes*/
+.xeditable-bsdate-width, .xeditable-textbox-width{
+    border-radius: 5px;
+    border-width: 1px;
+    height: 25px;
+}
+
+.payfees-add-button-height{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+
+}
+
+.ns-popover-width-coach-payment{
+    margin-left:-50px;
+}
+
+.final-summary-row{
+    background-color: #848484;
+    font-weight: bold;
+}
+
+.ol-padding-left{
+    padding-left: 20px;
+}
+
+.xs-start-time-end-time-margin{
+    margin-bottom: 4% !important;
+}
+
+.test-summary-report-header{
+    min-width: 450px !important;
+}
+
+.resport-tab-header{
+  min-width: 200px !important;
+}
+
+.dropout-report-coach-name-header{
+  width: 25%;
+}
+
+.dropout-report-other-header{
+  width: 15%;
+}
+
+.table-header-popover-color{
+  color: #000000;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.upload-button-inline {
+    display: inline !important;
+}
+
+.upload-button-padding {
+  padding-top: 1%;
+  padding-left: 4%;
+}
+
+.submit-button {
+  color: #ea2707;
+}

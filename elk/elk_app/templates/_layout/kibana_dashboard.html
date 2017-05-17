@@ -1,0 +1,10 @@
+{% extends "_layout/base.html" %}
+
+{% block main-container %}
+
+  {% block base_content %}
+    {% csrf_token %}
+    <iframe src="{{dashboard_link}}" name="kibana_iframe" style="width:100%; height:100%"></iframe>
+  {% endblock base_content %}
+
+{% endblock main-container %}

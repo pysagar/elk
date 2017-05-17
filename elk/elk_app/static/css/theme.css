@@ -1,0 +1,299 @@
+/*
+	nlms themes
+*/
+html, button, input, select, textarea, * {
+    font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+}
+
+/*navbar*/
+.navbar {
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.navbar-inverse {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #9B1414;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #e24714;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #ea2707;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    background-color: #ea2707;
+}
+
+/*buttons*/
+.btn-primary {
+    border-color: #9E0B16;
+    background-color: #9E0B16
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+    border-color: #A50E0E;
+    background-color: #A50E0E
+}
+
+.btn-primary.disabled,
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled],
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary:focus
+fieldset[disabled] .btn-primary.active {
+    background-color: #D37C83;
+    border-color: #D37C83;
+}
+
+.btn-black {
+    background-color: #242424;
+    color: #fff;
+}
+
+.btn-org {
+    background-color: #ea2707;
+    color: #fff;
+}
+
+/*panels*/
+.panel-nlms {
+    border-color: #ddd;
+    margin-bottom: 0px;
+}
+
+.panel-nlms > .panel-heading {
+    border-color: #ddd;
+    background-color: transparent;
+}
+
+.panel-nlms > .panel-footer {
+    background-color: transparent;
+}
+
+/*tables*/
+.table-nlms > thead {
+    background-color: #2A2A2A;
+    color: #fff;
+}
+
+/*well*/
+.well-transparent {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 0px;
+}
+
+/*alert*/
+.alert {
+    padding: 10px;
+    font-size: 12px;
+    position: fixed;
+    z-index: 2000;
+    top: 100px;
+    right: 32px;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+}
+
+.alert-dismissable .close, .alert-dismissible .close {
+    position: static;
+}
+
+/*Paginator list items*/
+.pagination > li > a,
+.pagination > li > a:hover,
+.pagination > li > span,
+.pagination > li > span:hover {
+    color: #b01c1c;
+}
+
+/*Paginator disabled boundary links*/
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+    color: #FF9292;
+}
+
+/*Paginator current page number*/
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    background-color: #b01c1c;
+    border-color: #b01c1c;
+}
+
+/*modal dialog*/
+.modal-dialog .modal-footer {
+    padding: 10px;
+}
+
+/* ui-select*/
+.ui-select-bootstrap .ui-select-choices-row.active > span{
+  background-color:#9E0B16;
+}
+
+.ui-select-bootstrap > .ui-select-match > .caret{
+  right:8px;
+}
+
+.ns-popover-width{
+    display:block;
+    max-width:415px;
+    width:415px;
+    margin-left:-300px;
+}
+
+.ns-popover-single-guardian-heigth{
+    margin-top:-110px;
+}
+
+.ns-popover-double-guardian-heigth{
+    margin-top:-220px;
+}
+
+.modal-dialog .modal-header {
+    padding: 1%;
+}
+
+.attendance-manager-coach-comment-edited{
+   font-size: 9px;
+   float: right;
+   padding-top: 9px;
+   padding-right: 5px;
+}
+
+.modal-title{
+    border-bottom-width: 18px;
+    border-top-width: 10px;
+    float: left;
+}
+
+.time-container td.form-group{
+    width: 100px !important;
+    padding: 5px;
+}
+
+#registerUpdateButton {
+    margin-top: 100px;
+}
+
+.underline-on-hover :hover{
+    text-decoration: underline;
+}
+
+/* to hide the ui-select which is overlapping the date picker*/
+.datepicker-container > ul{
+    z-index: 1200;
+}
+
+.selected-dropdown-menu > a{
+    font-weight: 600 !important;
+}
+
+
+.popover-content{
+    word-wrap: break-word;
+}
+
+.update-button{
+    margin-bottom: 10px;
+}
+
+.password-reset-button{
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+
+.modified-date{
+    font-size: 9px;
+    float: right;
+    padding-top: 9px;
+    padding-right: 5px;"
+}
+
+.presentAbsentExcused-header-width{
+    width: 40px;
+    max-height: 60px;
+}
+
+.transparent-backdrop{
+    opacity: 0 !important;
+}
+
+/* To add scroll bar when table width exceeds viewport view*/
+.large-table-container{
+    overflow-x: auto;
+    height: 600px;
+}
+
+.attendance-percentage-width{
+    width: 65px;
+}
+
+.register-date-width{
+    white-space: nowrap;
+    min-width: 65px;
+}
+
+.attendance-p-radio-button-padding{
+    padding-right: 0px;
+}
+
+.attendance-a-radio-button-padding{
+    padding-right: 0px;
+    padding-left: 25px;
+}
+
+.attendance-e-radio-button-padding{
+    padding-right: 0px;
+    padding-left: 26px;
+}
+
+.restrict-width-overflow-textarea{
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.attendnace-comment-textbox-margin .form-group{
+    margin-bottom: 5px;
+}
+
+.attendance-save-button-margin, .attendance-save-button-margin .form-group{
+    margin-bottom: 5px;
+    padding-left: 138px;
+}
+
+input[type=search].ui-select-search{
+  width: 100% !important;
+}
+
+.datepicker-container input, .editable-bsdate input{
+  background-color: #ffffff !important;
+}

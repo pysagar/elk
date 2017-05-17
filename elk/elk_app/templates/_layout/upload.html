@@ -1,0 +1,59 @@
+{% extends "_layout/base.html" %}
+
+{% block main-container %}
+
+  {% block base_content %}
+    <form name="upload_file" action="/import/csv/file/" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+
+      <!-- Button trigger modal -->
+      <div class="upload-button-padding">
+        <button type="button" class="btn btn-org" data-toggle="modal" data-target="#myModal">
+          Upload <span class="glyphicon glyphicon-upload"></span>
+        </button>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-md  " role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Import/Upload Data</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <span class="col-md-4">
+                <input id="file" class="btn btn-sm upload-button-inline" type="file" name="file" onchange="validateFile()" required />
+                </span>
+                <span class="col-md-4">
+                  <select id="projects" class="btn btn-sm" name="projects" required>
+                    <option value="" disabled selected>Select project</option>
+                    {% for project in projects %}
+                      <option>{{project.name}}</option>
+                  {% endfor %}
+                  </select>
+                </span>
+                <span class="col-md-4">
+                  <select id="log_type" class="btn btn-sm" name="log_type" required>
+                    <option value="" disabled selected>Select log type</option>
+                    {% for log_type in log_types %}
+                      <option>{{log_type.name}}</option>
+                    {% endfor %}
+                  </select>
+                </span>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div>
+                <input id="submit" class="btn btn-sm submit-button" type="submit" value="Start uploading">
+                <button type="button" class="btn btn-org" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  {% endblock %}
+
+{% endblock main-container %} 
